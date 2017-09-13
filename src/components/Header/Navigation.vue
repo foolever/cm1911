@@ -63,7 +63,7 @@
             border-bottom: 1px solid #333;
             opacity: 0;
             transition: all 0.5s;
-            transform: translateX(-20px) translateY(-20px);
+            transform: translateX(-5px) translateY(-20px) scale(1.05);
         }
         li:first-child{
             margin-top: 24px;
@@ -80,19 +80,19 @@
             line-height: 43px;
         }
         li:nth-of-type(1){
-            transition-delay: 0.05s;
+            transition-delay: 0.075s;
         }
         li:nth-of-type(2){
-            transition-delay: 0.1s;
-        }
-        li:nth-of-type(3){
             transition-delay: 0.15s;
         }
+        li:nth-of-type(3){
+            transition-delay: 0.225s;
+        }
         li:nth-of-type(4){
-            transition-delay: 0.2s;
+            transition-delay: 0.3s;
         }
         li:nth-of-type(5){
-             transition-delay: 0.25s;
+             transition-delay: 0.375s;
          }
 
     }

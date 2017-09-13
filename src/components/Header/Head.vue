@@ -81,7 +81,7 @@
             height: 100%;
             li{
                 opacity: 1;
-                transform: translateX(0) translateY(0);
+                transform: translateX(0) translateY(0) scale(1);
             }
         }
     }
