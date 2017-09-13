@@ -1,7 +1,7 @@
 <template>
     <ul>
         <li v-for="value in list">
-            <a href="value.router" v-html="value.text">
+            <a v-bind:href="value.router" v-html="value.text">
 
             </a>
         </li>
@@ -63,36 +63,35 @@
             opacity: 0;
             transition: all 0.5s;
             transform: translateX(-5px) translateY(-20px) scale(1.05);
-        }
-        li:first-child{
-            margin-top: 24px;
-        }
-        li.active{
+            &:first-child{
+                margin-top: 24px;
+            }
+            &.active{
+                a{
+                    opacity: 0.65;
+                }
+            }
             a{
-                opacity: 0.65;
+                color: #fff;
+                display: block;
+                height: 43px;
+                line-height: 43px;
+            }
+            &:nth-of-type(1){
+                transition-delay: 0.075s;
+            }
+            &:nth-of-type(2){
+                transition-delay: 0.15s;
+            }
+            &:nth-of-type(3){
+                transition-delay: 0.225s;
+            }
+            &:nth-of-type(4){
+                transition-delay: 0.3s;
+            }
+            &:nth-of-type(5){
+                transition-delay: 0.375s;
             }
         }
-        a{
-            color: #fff;
-            display: block;
-            height: 43px;
-            line-height: 43px;
-        }
-        li:nth-of-type(1){
-            transition-delay: 0.075s;
-        }
-        li:nth-of-type(2){
-            transition-delay: 0.15s;
-        }
-        li:nth-of-type(3){
-            transition-delay: 0.225s;
-        }
-        li:nth-of-type(4){
-            transition-delay: 0.3s;
-        }
-        li:nth-of-type(5){
-             transition-delay: 0.375s;
-         }
-
     }
 </style>
