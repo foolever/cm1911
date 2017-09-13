@@ -53,7 +53,6 @@
         padding: 0 48px ;
         height: 0;
         overflow: hidden;
-        transition: all 0.5s;
         background: rgba(0,0,0,.9);
         position: absolute;
         z-index: 8;

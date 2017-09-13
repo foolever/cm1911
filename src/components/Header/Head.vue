@@ -46,7 +46,6 @@
             float: left;
             transition: all 0.5s;
             transform-origin: 50% 50%;
-            background: $bg;
             &.rotate{
                 transform: rotate(90deg);
             }
@@ -79,6 +78,7 @@
         }
         #nav.active{
             height: 100%;
+            transition: all 0.5s;
             li{
                 opacity: 1;
                 transform: translateX(0) translateY(0) scale(1);
