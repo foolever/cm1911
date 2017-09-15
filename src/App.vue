@@ -24,6 +24,7 @@ export default {
         margin: 0;
         padding: 0;
         text-decoration: none;
+        font-family: "微软雅黑";
     }
     .rotate{
         well-change:'transform'
