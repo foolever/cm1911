@@ -4,7 +4,7 @@
             <span :class="{rotate:showNav}"></span>
             <span :class="{rotate:showNav}"></span>
         </div>
-        <img src="../../assets/logo.png">
+        <img src="../../assets/images/logo.png">
         <navigation id="nav" :class="{active:showNav}"></navigation>
     </div>
 </template>
