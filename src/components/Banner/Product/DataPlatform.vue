@@ -1,5 +1,5 @@
 <template>
-    <div class="banner-component data-platform">
+    <div class="banner-component data-platform" v-show="show">
         <p class="b-title"><span>D</span>ata platform</p>
         <p class="b-title-zh">数据平台<span>1+N</span></p>
         <div class="b-info">
@@ -21,7 +21,9 @@
     export default {
         name: 'dataplatform',
         data() {
-            return {}
+            return {
+                show:false
+            }
         },
         methods: {}
     }
