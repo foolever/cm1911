@@ -1,16 +1,34 @@
 <template>
     <div id="banner">
-
+        <data-platform></data-platform>
+        <practice-platform></practice-platform>
+        <research-platform></research-platform>
+        <teach-platform></teach-platform>
+        <x-platform></x-platform>
     </div>
 </template>
 
 <script type="text/ecmascript-6">
+
+    import DataPlatform from './Product/DataPlatform'
+    import PracticePlatform from './Product/PracticePlatform'
+    import ResearchPlatform from './Product/ResearchPlatform'
+    import XPlatform from './Product/XPlatform'
+    import TeachPlatform from './Product/TeachPlatform'
+
     export default {
         name: 'banner',
         data() {
             return {}
         },
-        methods: {}
+        methods: {},
+        components:{
+            DataPlatform,
+            PracticePlatform,
+            ResearchPlatform,
+            XPlatform,
+            TeachPlatform
+        }
     }
 </script>
 
