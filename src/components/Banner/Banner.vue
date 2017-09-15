@@ -21,7 +21,9 @@
         data() {
             return {}
         },
-        methods: {},
+        methods: {
+
+        },
         components:{
             DataPlatform,
             PracticePlatform,
@@ -44,6 +46,43 @@
         left: 0;
         top: 0;
         z-index: -1;
+        text-align: center;
+        overflow: hidden;
+        >div{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: $head-height;
+        }
+        a{
+            color: #1AA7B8;
+            font-size: 14px;
+            margin-top: 10px;
+            display: inline-block;
+        }
+        .b-title{
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 35px;
+            span{
+                font-size: 34px;
+            }
+        }
+        .b-title-zh{
+            font-size: 22px;
+            span{
+                font-weight: bold;
+            }
+        }
+        .b-info{
+            margin-top: 15px;
+            font-size: 14px;
+            padding: 0 30px;
+        }
+        .b-img{
+            position: relative;
+        }
     }
 
 </style>
