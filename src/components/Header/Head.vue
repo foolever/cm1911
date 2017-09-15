@@ -1,11 +1,11 @@
 <template>
     <div class="head">
-        <div class="nav-box" v-on:touchstart="rotate($event)">
-            <span></span>
-            <span></span>
+        <div class="nav-box" :class="{rotate:showNav}" v-on:touchstart="showNav=!showNav">
+            <span :class="{rotate:showNav}"></span>
+            <span :class="{rotate:showNav}"></span>
         </div>
         <img src="../../assets/logo.png">
-        <navigation id="nav"></navigation>
+        <navigation id="nav" :class="{active:showNav}"></navigation>
     </div>
 </template>
 
@@ -15,16 +15,11 @@
         name:'head',
         data(){
             return {
-
+                showNav:false,
             }
         },
         methods:{
-            rotate(e){
-                let $this=$(e.currentTarget);
-                $this.toggleClass("rotate");
-                $this.children("span").toggleClass("rotate");
-                $("#nav").toggleClass("active")
-            }
+
         },
         components:{
             Navigation
